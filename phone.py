@@ -30,8 +30,6 @@ rfc_pred_test = rfc.predict(x_test)
 from sklearn.metrics import confusion_matrix, accuracy_score
 
 cm = confusion_matrix(y_test, rfc_pred_test)
-sns.heatmap(cm, annot=True)
-print(accuracy_score(y_test, rfc_pred_test))
 
 # FrontEnd
 
