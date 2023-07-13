@@ -9,7 +9,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 # backEnd
 
-data = pd.read_csv(r"C:\Users\user\Desktop\phone.csv")
+data = pd.read_csv("phone.csv")
 df = data.drop(['clock_speed', 'm_dep', 'talk_time', 'wifi'], axis=1)
 df['sc_size'] = (((df['sc_h']) * (df['sc_h'])) + ((df['sc_w']) * (df['sc_w']))) ** 0.5 * 0.393701
 
